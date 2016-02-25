@@ -1,0 +1,127 @@
+body {
+  background: #F2FBFC;
+  font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.main-content-container {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 300px;
+}
+
+.show-me {
+  width: 100%;
+  float: left;
+}
+
+.labels {
+  width: 30%;
+  float: left;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-top: 7px;
+  margin-bottom: 18px;
+  padding-top: 10px;
+}
+
+.show-me-options {
+  width: 60%;
+  float: left;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1.5px black solid;
+}
+
+option {
+  font-size: 100px;
+}
+
+.allergens {
+  width: 100%;
+  float: left;
+}
+
+.allergen-container {
+  width: 100%;
+  margin-left: 70px;
+}
+
+.allergen-labels {
+  padding-left: 10px
+  padding-top: 50px;
+
+}
+.checkbox-wrapper {
+  width: 30%;
+  float: left;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.top-row {
+  margin-top: 20px;
+}
+
+.search {
+  margin-top: 120px;
+  padding: 20px 80px;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  border: 1px black solid;
+  background-color: white;
+}
+
+
+
+
+
+/*test*/
+
+.results-container {
+  width: 100%;
+  float: left;
+  background-color: white;
+  border: solid black 1px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.image-container {
+  width: 31%;
+  float: left;
+  background-color: pink;
+  margin: 20px;
+  margin-right: 10px;
+}
+
+.image-container p {
+  padding-top: 100px;
+  padding-bottom:100px
+}
+
+.product-information {
+  width: 62%;
+  float: left;
+  background-color: pink;
+  margin: 20px;
+  margin-left: 10px;
+}
+
+.product-information p {
+  padding-left: 20px;
+  padding-top: 20px;
+  text-align: left;
+}
