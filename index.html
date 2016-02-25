@@ -3,136 +3,54 @@
     	<meta charset="utf-8">
     	<meta name="description" content="">
 
-  		<title>Beauty Product Search</title>
+  		<title>Find My Products</title>
 
   		<!-- external CSS link -->
   		<link rel="stylesheet" href="css/reset.css">
-  		<link rel="stylesheet" href="css/style.css">
+  		<link rel="stylesheet" href="css/style2.css">
 
 	</head>
 
 	<body>
 		<!-- header -->
 			<header>
+				<nav>
+					<ul>
+						<li><a href="productsearch.html">Search</a></li>
+						<li><a href="myproducts.html">My Products</a></li>
+					</ul>
+				</nav>
 			</header>
+
 		<!-- main content -->
-			<div class="main-content-container">
+			<div class="main_content_container">
+        <form class="search_input">
+          <input class="find_my_products" placeholder="Find my products" type="text"></input>
+        </form>
 
+        <h2 class="search_results_title hide">Search results</h2>
 
-				<div class="show-me">
-					<label for="show-me-options" class="labels">Show me</label>
-					<select name="show-me-options" class="show-me-options">
-					  <option value="personalCare">Personal Care</option>
-					  <option value="skinCare">Skin Care</option>
-						<option value="fragrances">Fragrances</option>
-					  <option value="lipMakeup">Lip Makeup</option>
-						<option value="eyeEyebrowMakeup">Eye & Eyebrow Makeup</option>
-					  <option value="faceMakeup">Face Makeup</option>
-						<option value="bathProducts">Bath Products</option>
-					  <option value="hairStylingAids">Hair Styling Aids</option>
-						<option value="nailMakeup">Nail Makeup</option>
-					  <option value="hairShampoos">Hair Shampoo</option>
-						<option value="hairCosmetics">Hair Cosmetics</option>
-					  <option value="bodySoapsGels">Body Soaps & Gels</option>
-						<option value="babyDiaperDiaperCare">Baby Diaper & Diaper Care</option>
-						<option value="hairColor">Hair Color</option>
-						<option value="nailCare">Nail Care</option>
-						<option value="hairConditioners">Hair Conditioners</option>
-					</select>
+        <div class="no_results_container hide">
+					<h4>no results found</h4>
 				</div>
-				<!-- <div class="that-include-exclude">
-					<label for="include-exclude" class="labels">that</label>
-					<select name="include-exclude" class="include-exclude">
-						<option value="exclude">exclude</option>
-						<option value="include">include</option>
-					</select>
-				</div> -->
-				<!-- "that exclude the following ingredients" -->
-						<div class="common-allergen-options">
-							<label for="common-allergen-options" class="allergens labels">products that exclude the following ingredients</label>
 
-							<div class="allergen-container">
-										<div class="checkbox-wrapper top-row">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-1" value="allergen1" />
-												<label for="allergen-option-1" class="allergen-labels">Allergen 1</label>
-										</div>
-										<div class="checkbox-wrapper top-row">
-										    <input class="checkbox-input" type="checkbox" name="allergen-option-2" value="allergen2" />
-										    <label for="allergen-option-2">Allergen 2</label>
-										</div>
-										<div class="checkbox-wrapper top-row">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-3" value="allergen3" />
-												<label for="allergen-option-3">Allergen 3</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-4" value="allergen4" />
-												<label for="allergen-option-4">Allergen 4</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-5" value="allergen5" />
-												<label for="allergen-option-5">Allergen 5</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-6" value="allergen6" />
-												<label for="allergen-option-6">Allergen 6</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-7" value="allergen7" />
-												<label for="allergen-option-7">Allergen 7</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-8" value="allergen8" />
-												<label for="allergen-option-8">Allergen 8</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-9" value="allergen9" />
-												<label for="allergen-option-9">Allergen 9</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-10" value="allergen10" />
-												<label for="allergen-option-10">Allergen 10</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-11" value="allergen11" />
-												<label for="allergen-option-11">Allergen 11</label>
-										</div>
-										<div class="checkbox-wrapper">
-												<input class="checkbox-input" type="checkbox" name="allergen-option-12" value="allergen12" />
-												<label for="allergen-option-12">Allergen 12</label>
-										</div>
-								</div>
-<!-- submit search -->
-<!-- submit -->
-			<input type="submit" value="SEARCH" class="search" />
+        <div class="search_results_container hide">
+          
+						<!-- <div class="product_image image_urls"></div> -->
 
+        </div>
 
-
-<!-- results -->
-<div class="results-container">
-	<div class="image-container">
-		<p>product image</p>
-	</div>
-	<div class="product-information">
-		<p>product information</p>
-	</div>
-</div>
-
-
-
-
-
-				</div>
-			</div>
+      </div>
 
 		<!-- footer -->
 			<footer>
+      	<!-- footer close-->
 			</footer>
-		<!-- footer -->
 
     <!-- link jquery -->
-			    <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
+			<script src="https://code.jquery.com/jquery-1.12.0.js"></script>
 		<!-- link javascript -->
-			    <script src="index.js"></script>
+			<script src="index.js"></script>
 
   </body>
 </html>
